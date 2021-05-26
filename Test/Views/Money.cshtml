@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Money>
+
+@{
+    Layout = "master.cshtml";
+}
+
+@* the fun starts here *@
+
+<h1>@Model.Title</h1>
+
+<pre>
+    @Model.MainContent
+</pre>
+
+<p>@Model.ColorName<p>
+
+@if(Model.ShowImg)
+{
+    <img src="/media/jw1n510e/jae-park-7gx5aicb5i4-unsplash.jpg" title="cat picture" style="height: 200px"/>
+}
+
+<div>
+    @Model.Name
+</div>
